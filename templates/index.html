@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diabetes Prediction</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>🩸 Diabetes Prediction</h1>
+    <p class="subtitle">
+      Enter patient details to predict the likelihood of diabetes using a trained ML model.
+    </p>
+
+    <form id="prediction-form">
+      <div class="grid">
+        <div>
+          <label>Pregnancies</label>
+          <input type="number" name="Pregnancies" placeholder="e.g., 6" required />
+        </div>
+        <div>
+          <label>Glucose</label>
+          <input type="number" name="Glucose" placeholder="e.g., 148" required />
+        </div>
+        <div>
+          <label>Blood Pressure</label>
+          <input type="number" name="BloodPressure" placeholder="e.g., 72" required />
+        </div>
+        <div>
+          <label>Skin Thickness</label>
+          <input type="number" name="SkinThickness" placeholder="e.g., 35" required />
+        </div>
+        <div>
+          <label>Insulin</label>
+          <input type="number" name="Insulin" placeholder="e.g., 0" required />
+        </div>
+        <div>
+          <label>BMI</label>
+          <input type="number" name="BMI" step="0.1" placeholder="e.g., 33.6" required />
+        </div>
+        <div>
+          <label>Diabetes Pedigree Function</label>
+          <input type="number" name="DiabetesPedigreeFunction" step="0.001" placeholder="e.g., 0.627" required />
+        </div>
+        <div>
+          <label>Age</label>
+          <input type="number" name="Age" placeholder="e.g., 50" required />
+        </div>
+      </div>
+
+      <button type="submit" class="btn">Predict</button>
+    </form>
+
+    <div id="result-container" class="result-box hidden"></div>
+  </div>
+  
+  <script src="/static/script.js"></script>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
