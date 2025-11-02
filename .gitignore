@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+venv
+.env
+.DS_Store
+.dockerignore
+
+*.ipynb
+
+*.csv
+
+*.log
+tmp/
+logs/
